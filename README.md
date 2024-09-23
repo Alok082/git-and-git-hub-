@@ -3,5 +3,19 @@ A version  control system for handling a large scale projects where multiple dev
 version control system keep the history of the code , when and what changes done at which line  of code 
 
 **Git** is also a version control system to help to work multiple developer on a single project , git is a tool that runs at our computer system 
+before using git in our system we have to download vs code , window(git bash), mac (terminal) then run this command to check git --version
+----> after install and setup the git , we have to configure the git (ham git ko bta rahe hain ki ham kon se account k  andar change karnne ja rahe hai )
+there are two type of changes , global and local 
+ ===> global - system me jo v changes hoga vo bas ek hi account pe change hoga , 
+ i. git config --global user.name 'My name'
+ ii. git config --global user.email 'email'
+ iii. git config --list  (to test whichh account have we set up )
+ ===> Local - this is for any specific repository of specific github  id (if you have multiple github account account )
+ i. git config user.name "Your Name Here"
+ ii. git config user.email "email"
+ 
 **github**  it is a website that allow the developers to store and manage thheir code using git- http//:www.github.com
- 1. we upload the file on git hub in  the  form of folder that folder is called repositpory in the git language 
+ 1. we upload the file on git hub in  the  form of folder that folder is called repositpory in the git language
+ 2. there is two step process to upload on github , first add the things and second commit the things
+ 3. before commit the changes we have to give a message to the github that what i have done in the changes(commits )
+ 4. git store  our commits in the forms of history 
