@@ -37,6 +37,7 @@ there are two type of changes , global and local </br>
     c. git checkout <branch name > (to navigate from one branch to another)
     d. git checkout -b <new branch name > (to  create a new branch)
     e. git checkout -d <branch name > (to delete branch)
+    f. git chheckout - (previous checkout branch=)
 
 ![githubbranch](./githubbranch.png)
 
@@ -122,12 +123,15 @@ Clean Up History: Modify commit history by squashing, editing, or reordering com
 
 Here’s what you can do interactively:
 
-Reorder Commits: Change the order of commits.
-Squash Commits: Combine multiple commits into one.
-Edit Commit Messages: Modify the messages of individual commits.
-Drop Commits: Remove specific commits.
-When you run the command, it opens an editor with a list of your commits, and you can choose actions like pick, reword, squash, edit, or drop to apply to each commit. After saving and closing the editor, Git applies the changes according to your instructions.
-    k. 
+      Reorder Commits: Change the order of commits.
+      Squash Commits: Combine multiple commits into one.
+      Edit Commit Messages: Modify the messages of individual commits.
+      Drop Commits: Remove specific commits.
+      When you run the command, it opens an editor with a list of your commits, and you can choose actions like pick, reword, squash, edit, or drop to apply to each commit. After saving and closing the editor, Git applies the changes according to your instructions.
+    k. git fetch -> command retrieves updates from a remote repository, downloading any new commits, branches, or tags without merging them into your local branches. It allows you to see changes made by others before deciding to integrate them into your local repository with commands like git merge or git rebase
+
+
+    
 # open a repo and a project which you want to use , and press > this button on keyboard it automatically set a pull request and redirect to the vs code 
    
      
