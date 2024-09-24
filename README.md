@@ -42,7 +42,7 @@ there are two type of changes , global and local
 
   # Merge Commands => There are two way to merge 
    **Way 1** 
-    a. git diff (shows the differences between two versions of files in your Git repository, highlighting changes like added, modified, or deleted lines of code.),
+    a. git diff <branch name >(shows the differences between two versions of files in your Git repository, highlighting changes like added, modified, or deleted lines of code.),
     b. git merge <branch name > (to merge 2 branches) 
     c. git checkout <branch name > (to navigate from one branch to another)
     d. git checkout -b <new branch name > (to  create a new branch)
@@ -55,11 +55,17 @@ there are two type of changes , global and local
   #  jab ek hi project par multiple dev kaam kr rahe ho aur vo main branch k sath merge karna chahte ho aur main branch kisi senior dev k andar me ho to rest of dev PR raise krte hain main ke sath merge karne k liye aur senior dev unke changes ko review karta hai aur then merge  karta hai jisse main branch safe rahe, aur senior dev us PR k upr comment v kar skte hai if koi issue ho PR k andar 
 
   #  here how to merge a PR =======>
+  click on compare and pull  request 
   ![shot1](./shot1.png)
+  write title and description and click on create pull request 
   ![shot2](./shot2.png)
+  then click on merge pull request 
   ![shot3](./shot3.png)
+
+  # Resolving Merge Conflicts  => An event that takes place when git is unable to automatically resolve differences in code between two commits
+     git can't do merge automatically  so we need to resolve this mannaully then we can merge 
+     
   
-    
 
  
 
@@ -81,6 +87,8 @@ there are two type of changes , global and local
   8. Push command - after commit the code on thhe local machine we have to update the code on the github repository at server (to upload local repo content to remote repo) -> git push origin <branch name> ,  git push  
         -u origin <branch name> (here -u is used to tell the github that in future we will push on only this branch , ) next time we will only hit - git push
   9. To unstage the code - git restore --staged <file> , after git add command if it need to get back the added file
+  10. Pull commond -> git pull , command fetches changes from a remote repository and immediately merges them into your current branch, It's essentially a combination of git fetch (which downloads the changes) and git 
+       merge (which integrates them).
 
      
 
