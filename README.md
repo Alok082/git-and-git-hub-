@@ -31,7 +31,7 @@ there are two type of changes , global and local
 
 **Git branches**  Branches in GitHub isolate work, enable parallel development, and facilitate safe collaboration without affecting the main codebase.
   # Merge -> A GitHub merge combines changes from one branch into another, typically integrating a feature or fix into the main codebase.
-  # Merge Commands => 
+  # Branch Commands => 
     a. git branch (to check branch),
     b. git branch -M <branch name > (to rename branch) 
     c. git checkout <branch name > (to navigate from one branch to another)
@@ -40,8 +40,28 @@ there are two type of changes , global and local
 
 ![githubbranch](./githubbranch.png)
 
+  # Merge Commands => There are two way to merge 
+   **Way 1** 
+    a. git diff (shows the differences between two versions of files in your Git repository, highlighting changes like added, modified, or deleted lines of code.),
+    b. git merge <branch name > (to merge 2 branches) 
+    c. git checkout <branch name > (to navigate from one branch to another)
+    d. git checkout -b <new branch name > (to  create a new branch)
+    e. git checkout -d <branch name > (to delete branch)
 
+   **Way 2** 
+    a. Create a PR -> PR is a pull  request 
+       A pull request (PR) is a feature in GitHub (and other version control platforms) that allows you to propose changes from one branch to another, enabling code review, discussion, and approval before merging 
+        those changes into the main codebase.
+  #  jab ek hi project par multiple dev kaam kr rahe ho aur vo main branch k sath merge karna chahte ho aur main branch kisi senior dev k andar me ho to rest of dev PR raise krte hain main ke sath merge karne k liye aur senior dev unke changes ko review karta hai aur then merge  karta hai jisse main branch safe rahe, aur senior dev us PR k upr comment v kar skte hai if koi issue ho PR k andar 
 
+  #  here how to merge a PR =======>
+  ![shot1](./shot1.png)
+  ![shot2](./shot2.png)
+  ![shot3](./shot3.png)
+  
+    
+
+ 
 
 
 **Git commands**
