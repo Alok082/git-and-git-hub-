@@ -82,8 +82,7 @@ there are two type of changes , global and local </br>
               https://Alok082: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@github.com/Alok082/pocketdoctor.git ,
   6. To remove the remote origin - git remote remove origin
   7. To check the remote origin - git remote -v  
-  8. Push command - after commit the code on thhe local machine we have to update the code on the github repository at server (to upload local repo content to remote repo) -> git push origin <branch name> ,  git push  
-        -u origin <branch name> (here -u is used to tell the github that in future we will push on only this branch , ) next time we will only hit - git push
+  8. Push command - after commit the code on thhe local machine we have to update the code on the github repository at server (to upload local repo content to remote repo) -> git push origin <branch name> ,  git push  -u origin <branch name> (here -u is used to tell the github that in future we will push on only this branch , ) next time we will only hit - git push
   9. To unstage the code - git restore --staged <file> , after git add command if it need to get back the added file
   10. Pull commond -> git pull , command fetches changes from a remote repository and immediately merges them into your current branch, It's essentially a combination of git fetch (which downloads the changes) and 
       git merge (which integrates them).
@@ -106,10 +105,31 @@ there are two type of changes , global and local </br>
    # fork ka use krke ham kisi dusre person k account ka pura code apne account me copy kar skte hain uske bad ham usme change krke PR raise kar skte hain then ham jaha se copy kiye honge us repo ka owner merge kr   dega basically isko ham kisi open source me contibute krne k liye karte hain
 
   
+# Short tricks =>>
+  
+    a. git commit -am "message" (this command add and commit at same time),
+    b. git commit --amend -m <message > (used to update the message of last commit )
+    c. git commit --amend --no-edit (command modifies the most recent commit without changing its commit message. It’s often used to include additional changes in the last commit.)# but while push you need to do with force (git push origin <branch name > --force)
+    d. git revert <hash code> (command creates a new commit that undoes the changes made by a previous commit, effectively reversing its effects without altering the project's history.)
+    e. git stash command temporarily saves (or "stashes") your uncommitted changes, allowing you to switch branches or work on something else without committing those changes. You can later reapply the stashed changes when you're ready (github does not allow user to change directory if you have anyting add and not commited , stash will help here)
+    f. git stash pop OR git stash apply Once the changes are reapplied, you can commit them.
+    g. git stash save <name> (this command will save followed by a name) , after that > git stash list (list of all stashes) then git stash apply <index> (to get back for commit )
+    h. git log --graph --online --decorate  (to get the commit history in for of graph and decorated)
+    i. git rebase  (command is used to move or combine a sequence of commits to a new base commit. It’s often used to:
+Integrate Changes: Apply your changes on top of the latest changes from another branch, effectively "replaying" your commits on top of it.
+Clean Up History: Modify commit history by squashing, editing, or reordering commits for a cleaner, linear history.)
+    j. git rebase <branch name> --interactive (or git rebase -i <branch name>) allows you to interactively rebase your current branch onto the specified branch. This means you can review and modify your commits before they are applied on top of the target branch.
 
+Here’s what you can do interactively:
 
+Reorder Commits: Change the order of commits.
+Squash Commits: Combine multiple commits into one.
+Edit Commit Messages: Modify the messages of individual commits.
+Drop Commits: Remove specific commits.
+When you run the command, it opens an editor with a list of your commits, and you can choose actions like pick, reword, squash, edit, or drop to apply to each commit. After saving and closing the editor, Git applies the changes according to your instructions.
+    k. 
+# open a repo and a project which you want to use , and press > this button on keyboard it automatically set a pull request and redirect to the vs code 
    
-
      
 
  
