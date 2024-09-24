@@ -65,7 +65,7 @@ there are two type of changes , global and local </br>
   # Resolving Merge Conflicts  => An event that takes place when git is unable to automatically resolve differences in code between two commits
      git can't do merge automatically  so we need to resolve this mannaully then we can merge 
      
-     ![mergeconflict](./mergeconflict.png)
+  ![mergeconflict](./mergeconflict.png)
      
 
 **Git commands**
