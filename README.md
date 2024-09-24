@@ -11,8 +11,8 @@ mkdir newdir - to make a new directory
 
 **Woekflow to upload the code on the github ==> git init-> git add . -> git commit -> git remote add origin <link> -> git branch (to check branch)-> git branch -M <branch name > -> git push origin <branch name>**
 
-**Git** is also a version control system to help to work multiple developer on a single project , git is a tool that runs at our computer system 
-before using git in our system we have to download vs code , window(git bash), mac (terminal) then run this command to check git --version </br>
+**Git** is also a version control system to help to work multiple developer on a single project, git is a tool that runs at our computer system </br>
+before using git in our system we have to download vs code, window(git bash), mac (terminal) then run this command to check git --version </br>
 ----> after install and setup the git , we have to configure the git (ham git ko bta rahe hain ki ham kon se account k  andar change karnne ja rahe hai )</br>
 there are two type of changes , global and local </br>
  ===> global - system me jo v changes hoga vo bas ek hi account pe change hoga , </br>
