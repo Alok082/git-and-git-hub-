@@ -29,7 +29,15 @@ there are two type of changes , global and local
  3. before commit the changes we have to give a message to the github that what i have done in the changes(commits)
  4. git store  our commits in the forms of history
 
-**Git branches** 
+**Git branches**  Branches in GitHub isolate work, enable parallel development, and facilitate safe collaboration without affecting the main codebase.
+  # Merge -> A GitHub merge combines changes from one branch into another, typically integrating a feature or fix into the main codebase.
+  # Merge Commands => 
+    a. git branch (to check branch),
+    b. git branch -M <branch name > (to rename branch) 
+    c. git checkout <branch name > (to navigate from one branch to another)
+    d. git checkout -b <new branch name > (to  create a new branch)
+    e. git checkout -d <branch name > (to delete branch)
+
 ![githubbranch](./githubbranch.png)
 
 
