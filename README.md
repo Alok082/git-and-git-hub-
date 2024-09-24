@@ -30,7 +30,7 @@ there are two type of changes , global and local
  4. git store  our commits in the forms of history
 
 **Git branches** 
-![alok_profile](https://github.com/user-attachments/assets/e323379f-0127-41ed-b757-2aa99981cac2)
+![Screenshot 2024-09-24 at 12.27.33 PM](./Screenshot 2024-09-24 at 12.27.33 PM.png)
 
 
 
