@@ -65,10 +65,8 @@ there are two type of changes , global and local
   # Resolving Merge Conflicts  => An event that takes place when git is unable to automatically resolve differences in code between two commits
      git can't do merge automatically  so we need to resolve this mannaully then we can merge 
      
-  
-
- 
-
+     ![mergeconflict](./mergeconflict.png)
+     
 
 **Git commands**
   1. clone - to clone a repository on our local machine -> git clone <URL>
@@ -87,8 +85,30 @@ there are two type of changes , global and local
   8. Push command - after commit the code on thhe local machine we have to update the code on the github repository at server (to upload local repo content to remote repo) -> git push origin <branch name> ,  git push  
         -u origin <branch name> (here -u is used to tell the github that in future we will push on only this branch , ) next time we will only hit - git push
   9. To unstage the code - git restore --staged <file> , after git add command if it need to get back the added file
-  10. Pull commond -> git pull , command fetches changes from a remote repository and immediately merges them into your current branch, It's essentially a combination of git fetch (which downloads the changes) and git 
-       merge (which integrates them).
+  10. Pull commond -> git pull , command fetches changes from a remote repository and immediately merges them into your current branch, It's essentially a combination of git fetch (which downloads the changes) and 
+      git merge (which integrates them).
+  11. git log (to check all the commits on the git hub ) , git log --oneline (show all the commits in one line )     
+
+**Undoing changes**   sometime by mistake we add or commit any thing which we don't have to do , so we need to undo that changes
+ # case 1 ===> staged changes (jo changes add ho gye hain but commit nhi hue )
+      git reset <file name > OR git reset (for all files changes)
+      run -> git reset --hard to make changes in vs code or your local platform 
+      
+ # case 2 ===> commited changes (for one changes) 
+      git reset ~HEAD1 , all the commits stored in like linked list , and the last commit name is by default HEAD and ~1 mean 1 step 
+
+ # case 2 ===>multiple commited changes 
+       git reset <commit hash>  every commits has hash code to identify that commit , so we can check that hash code by git log and , rest that commit by using that hash code 
+       run -> git reset --hard to make changes in vs code or your local platform 
+      
+**Fork**  A fork in Git is a personal copy of someone else's repository that you create under your own GitHub account, allowing you to freely experiment with changes without affecting the original project.
+          Its like as rough copy
+   # fork ka use krke ham kisi dusre person k account ka pura code apne account me copy kar skte hain uske bad ham usme change krke PR raise kar skte hain then ham jaha se copy kiye honge us repo ka owner merge kr   dega basically isko ham kisi open source me contibute krne k liye karte hain
+
+  
+
+
+   
 
      
 
