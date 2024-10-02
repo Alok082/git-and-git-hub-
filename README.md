@@ -111,16 +111,28 @@ there are two type of changes , global and local </br>
   
     a. git commit -am "message" (this command add and commit at same time),
     b. git commit --amend -m <message > (used to update the message of last commit )
-    c. git commit --amend --no-edit (command modifies the most recent commit without changing its commit message. It’s often used to include additional changes in the last commit.)# but while push you need to do with force (git push origin <branch name > --force)
-    d. git revert <hash code> (command creates a new commit that undoes the changes made by a previous commit, effectively reversing its effects without altering the project's history.)
-    e. git stash command temporarily saves (or "stashes") your uncommitted changes, allowing you to switch branches or work on something else without committing those changes. You can later reapply the stashed changes when you're ready (github does not allow user to change directory if you have anyting add and not commited , stash will help here)
+    c. git commit --amend --no-edit (command modifies the most recent commit without changing its commit message.
+ It’s often used to include additional changes in the last commit.)# but while push you need to do with force 
+ (git push origin <branch name > --force)
+    d. git revert <hash code> (command creates a new commit that undoes the changes made by a previous commit, 
+    effectively reversing its effects without altering the project's history.)
+    e. git stash command temporarily saves (or "stashes") your uncommitted changes, allowing you to switch 
+    branches or work on something else without committing those changes. You can later reapply the stashed
+    changes when you're ready (github does not allow user to change directory if you have anyting add and not 
+    commited , stash will help here)
     f. git stash pop OR git stash apply Once the changes are reapplied, you can commit them.
-    g. git stash save <name> (this command will save followed by a name) , after that > git stash list (list of all stashes) then git stash apply <index> (to get back for commit )
+    g. git stash save <name> (this command will save followed by a name) , after that > git stash list 
+    (list of all stashes) then git stash apply <index> (to get back for commit )
     h. git log --graph --online --decorate  (to get the commit history in for of graph and decorated)
-    i. git rebase  (command is used to move or combine a sequence of commits to a new base commit. It’s often used to:
-Integrate Changes: Apply your changes on top of the latest changes from another branch, effectively "replaying" your commits on top of it.
-Clean Up History: Modify commit history by squashing, editing, or reordering commits for a cleaner, linear history.)
-    j. git rebase <branch name> --interactive (or git rebase -i <branch name>) allows you to interactively rebase your current branch onto the specified branch. This means you can review and modify your commits before they are applied on top of the target branch.
+    i. git rebase  (command is used to move or combine a sequence of commits to a new base commit.
+    It’s often used to:
+Integrate Changes: Apply your changes on top of the latest changes from another branch, 
+effectively "replaying" your commits on top of it.
+Clean Up History: Modify commit history by squashing, editing, 
+or reordering commits for a cleaner, linear history.)
+    j. git rebase <branch name> --interactive (or git rebase -i <branch name>)
+    allows you to interactively rebase your current branch onto the specified branch. 
+    This means you can review and modify your commits before they are applied on top of the target branch.
 
 Here’s what you can do interactively:
 
