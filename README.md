@@ -98,7 +98,7 @@ there are two type of changes , global and local </br>
       git reset ~HEAD1 , all the commits stored in like linked list , and the last commit name is by default HEAD and ~1 mean 1 step 
 
  # case 2 ===>multiple commited changes 
-       git reset <commit hash>  every commits has hash code to identify that commit , so we can check that hash code </br > by git log and , rest that commit by using that hash code 
+       git reset <commit hash>  every commits has hash code to identify that commit , so we can check that hash code </br> by git log and , rest that commit by using that hash code 
        run -> git reset --hard to make changes in vs code or your local platform 
       
 **Fork**  A fork in Git is a personal copy of someone else's repository that you create under your own GitHub account, allowing you to freely experiment with changes without affecting the original project.
